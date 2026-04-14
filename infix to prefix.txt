@@ -1,0 +1,18 @@
+INFIX TO PREFIX
+
+BEGIN
+  INPUT infix_expression
+
+  REVERSE infix_expression
+
+  FOR each character DO
+      IF '(' THEN replace with ')'
+      IF ')' THEN replace with '('
+  END FOR
+
+  postfix = infix_to_postfix(modified_expression)
+
+  prefix = REVERSE(postfix)
+
+  PRINT prefix
+END
